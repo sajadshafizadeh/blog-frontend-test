@@ -7,7 +7,7 @@ const PostsList = (props) => {
 	return (
 		<div>
 			<PostItems />
-			<span>check the console</span>
+			<span>Check out the console</span>
 		</div>
 	);
 }
@@ -40,7 +40,6 @@ export async function getServerSideProps (context){
 			},
 		};
 	}
-
 }
 
 // To set PostsList method as the default executable one
