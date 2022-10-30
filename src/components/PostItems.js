@@ -1,9 +1,8 @@
-export const PostItems = (props) => {
-
-	return (
-		<div className="post-item">
-			<h2>{props.post.title}</h2>
-			<span>{props.post.body}</span>
-		</div>
-	);
-}
+export const PostItems = ({ body, title, tags }) => {
+  return (
+    <div className="post-item">
+      <h1 className="each-title-posts">{title}</h1>
+      <p>{body}</p>
+    </div>
+  );
+};
