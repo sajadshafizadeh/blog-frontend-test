@@ -1,13 +1,10 @@
 import {PostItems} from '../../components/PostItems';
 
 const PostsList = (props) => {
-	
-	console.log(props.posts);
-
+console.log(props.posts);
 	return (
 		<div>
-			<PostItems />
-			<span>Check out the console</span>
+			{props.posts.posts.map((post)=> (<PostItems key={post.id} post={post} />))}			
 		</div>
 	);
 }

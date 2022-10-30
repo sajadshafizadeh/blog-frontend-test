@@ -1,6 +1,9 @@
-export const PostItems = () => {
+export const PostItems = (props) => {
 
 	return (
-		<h1>Blog Posts List Here</h1> 
-		);
+		<div className="post-item">
+			<h2>{props.post.title}</h2>
+			<span>{props.post.body}</span>
+		</div>
+	);
 }
