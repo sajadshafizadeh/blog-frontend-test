@@ -1,7 +1,8 @@
 import Image from "next/image";
 import profilePic from "../../Assets/Images/profile.jpg";
+
 const SinglePost = (props) => {
-  console.log(props.post);
+
   const post = props.post;
   const tags = props.post.tags;
 
@@ -86,33 +87,35 @@ const SinglePost = (props) => {
       </p>
       <div className="code-box">
         <table className="table-box">
-          <tr>
-            <td className="td-one"> Moderate </td>
-            <td className="td-tow"> Regular Expression Denial of Service </td>
-          </tr>
-          <tr>
-            <td className="td-one"> Package </td>
-            <td className="td-tow">│ browserslist </td>
-          </tr>
-          <tr>
-            <td className="td-one">Patched in</td>
-            <td className="td-tow">=4.16.5</td>
-          </tr>
-          <tr>
-            <td className="td-one">Dependency of</td>
-            <td className="td-tow">react-scripts</td>
-          </tr>
-          <tr>
-            <td className="td-one"> Path </td>
-            <td className="td-tow">
-              {" "}
-              react-scripts react-dev-utils browserslist{" "}
-            </td>
-          </tr>
-          <tr>
-            <td className="td-one">More info </td>
-            <td className="td-tow">https://npmjs.com/advisories/1747</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="td-one"> Moderate </td>
+              <td className="td-tow"> Regular Expression Denial of Service </td>
+            </tr>
+            <tr>
+              <td className="td-one"> Package </td>
+              <td className="td-tow">│ browserslist </td>
+            </tr>
+            <tr>
+              <td className="td-one">Patched in</td>
+              <td className="td-tow">=4.16.5</td>
+            </tr>
+            <tr>
+              <td className="td-one">Dependency of</td>
+              <td className="td-tow">react-scripts</td>
+            </tr>
+            <tr>
+              <td className="td-one"> Path </td>
+              <td className="td-tow">
+                {" "}
+                react-scripts react-dev-utils browserslist{" "}
+              </td>
+            </tr>
+            <tr>
+              <td className="td-one">More info </td>
+              <td className="td-tow">https://npmjs.com/advisories/1747</td>
+            </tr>
+            </tbody>
         </table>
       </div>
       <p className="body-post ">

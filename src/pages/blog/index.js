@@ -2,9 +2,27 @@ import Link from "next/link";
 import Image from "next/image";
 import { PostItems } from "../../components/PostItems";
 import profilePic from "../../Assets/Images/profile.jpg";
+import Darkmode from "darkmode-js";
 
 const PostsList = (props) => {
-  console.log(props.posts);
+
+  const options = {
+    bottom: "64px",
+    right: "32px",
+    left: "unset",
+    time: "0.5s",
+    mixColor: "#fff",
+    backgroundColor: "#fff",
+    buttonColorDark: "#100f2c",
+    buttonColorLight: "#fff",
+    saveInCookies: false,
+    label: "🌓",
+    autoMatchOsTheme: true,
+  };
+
+  const darkmode = new Darkmode(options);
+  darkmode.showWidget();
+
   const posts = props.posts.posts;
   return (
     <div className="all-posts-screen">

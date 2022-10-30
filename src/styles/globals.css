@@ -48,7 +48,9 @@ li {
   border-radius: 15px;
   color: white;
 }
-
+/* :root {
+  color-scheme: dark;
+} */
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;

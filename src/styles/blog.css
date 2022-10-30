@@ -71,3 +71,16 @@
 .tag-link {
   padding: 0px 10px;
 }
+
+button.darkmode-toggle {
+  bottom: none !important;
+  top: 64px !important;
+}
+
+ div.darkmode-layer--button{
+   top: 64px !important;
+}
+
+body.darkmode--activated > div.darkmode-layer--button{
+  top: 0px !important;
+}
